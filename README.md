@@ -1,6 +1,6 @@
 # Hello World Home Assistant Add-on
 
-A simple Hello World add-on for Home Assistant that logs "Hello World" to the console.
+A simple Hello World FastAPI add-on for Home Assistant.
 
 ## Installation
 
@@ -12,4 +12,4 @@ A simple Hello World add-on for Home Assistant that logs "Hello World" to the co
 
 ## Usage
 
-Start the add-on and check the logs to see "Hello World" printed.
+Start the add-on and access: `http://<HA_IP>:1880/`

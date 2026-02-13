@@ -1,13 +1,12 @@
-ARG BUILD_FROM
-FROM $BUILD_FROM
-
-RUN apk add --no-cache python3 py3-pip
-
-COPY rootfs /
-
-RUN pip3 install --no-cache-dir --break-system-packages -r /data/requirements.txt
+FROM python:3.12-alpine
 
 WORKDIR /data
-RUN chmod a+x /usr/bin/run.sh
 
-CMD [ "/usr/bin/run.sh" ]
+COPY rootfs/data/requirements.txt .
+RUN pip install --no-cache-dir --break-system-packages -r requirements.txt
+
+COPY rootfs/ /
+
+EXPOSE 1880
+
+CMD ["python3", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "1880"]
