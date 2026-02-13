@@ -5,6 +5,6 @@ RUN apk add --no-cache python3
 
 COPY rootfs /
 
-RUN chmod a+x /run.sh
+RUN chmod a+x /usr/bin/run.sh
 
-CMD [ "/run.sh" ]
+CMD [ "/usr/bin/run.sh" ]
