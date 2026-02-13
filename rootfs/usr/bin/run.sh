@@ -1,5 +1,3 @@
 #!/bin/bash
-while true; do
-    echo "Hello World"
-    sleep 10
-done
+cd /data
+python3 -m http.server 1880

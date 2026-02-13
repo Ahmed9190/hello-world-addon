@@ -1,9 +1,11 @@
 name: Hello World
 version: "1.0.0"
 slug: hello_world
-description: A simple Hello World add-on that logs Hello World
+description: A simple Hello World web server add-on
 url: https://github.com/Ahmed9190/hello-world-addon
 arch:
   - aarch64
   - amd64
 init: false
+ports:
+  1880/tcp: 1880
