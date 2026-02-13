@@ -1,3 +1,5 @@
 #!/bin/bash
-echo "Hello World"
-sleep infinity
+while true; do
+    echo "Hello World"
+    sleep 5
+done
