@@ -1,2 +1,5 @@
 #!/bin/bash
-exec tail -f /dev/null
+while true; do
+    echo "Hello World"
+    sleep 10
+done
