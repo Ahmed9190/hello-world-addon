@@ -1,0 +1,9 @@
+name: Hello World
+version: "1.0.0"
+slug: hello_world
+description: A simple Hello World add-on that logs Hello World
+url: https://github.com/Ahmed9190/hello-world-addon
+arch:
+  - aarch64
+  - amd64
+init: false
