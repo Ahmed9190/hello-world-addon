@@ -1,5 +1,5 @@
 name: Hello World
-version: "1.0.0"
+version: "1.0.1"
 slug: hello_world
 description: A simple Hello World FastAPI add-on
 url: https://github.com/Ahmed9190/hello-world-addon
@@ -11,3 +11,4 @@ map:
   - data:rw
 ports:
   1880/tcp: 1880
+homeassistant: "2022.12.0"
